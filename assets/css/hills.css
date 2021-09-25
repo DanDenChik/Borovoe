@@ -39,7 +39,7 @@ a{
     display: block;
     height: 5px;
     background-color: lightgreen;
-    width: 65px;
+    width: 70xpx;
     transition: .2s ease-in-out;
     opacity: 0;
     margin-top: 5px;
@@ -52,6 +52,10 @@ a{
 }
 .header__nav__link:hover:after{
     opacity: 1;
+}
+.main{
+    
+    background-color: lightgoldenrodyellow;
 }
 .main__blog{
     display: flex;
@@ -76,6 +80,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
 }
 .main__blog__img{
     width: 45%;
@@ -107,7 +112,6 @@ a{
 .second{
     background: url(../img/three_sisters.jpeg) no-repeat center;
     background-size: cover; 
-    background-position: 0 -50;
 }
 .third{
     background: url(../img/okzhetpes.jpeg) no-repeat center;
