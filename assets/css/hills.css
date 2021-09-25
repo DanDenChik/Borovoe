@@ -1,0 +1,179 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    font-weight: 700;
+    font-size: 30px;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    background-size: cover; 
+    margin: 0 auto;
+}
+.header{
+    height: 100px;
+}
+.main__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+.header__nav__link{
+    padding-left: 40px;
+    font-weight: 700;
+    font-size: 21px;
+}
+.header__nav__link::after{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: lightgreen;
+    width: 65px;
+    transition: .2s ease-in-out;
+    opacity: 0;
+    margin-top: 5px;
+}
+.header__nav__link:first-child:after{
+    width: 90px;
+}
+.header__nav__link:last-child:after{
+    width: 150px;
+}
+.header__nav__link:hover:after{
+    opacity: 1;
+}
+.main__blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    padding-bottom: 100px;
+}
+.main__blog__title{
+    font-size: 30px;
+}
+.main__blog__text{
+    margin: 10 50;
+    font-size: 18;
+}
+.main__blog__info{
+    width: 45%;
+    font-size: 18px;
+    height: 90%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main__blog__img{
+    width: 45%;
+}
+.main__blog__text span{
+    font-size: 21px;
+}
+.main__blog__text__list{
+    padding: 0;
+    list-style: square;
+    margin: 0;
+    padding-top: 10px;
+    width: 90%; 
+    line-height: 1.5;
+}
+.main__blog__text__list__item{
+    margin-bottom: 5px;
+}
+.main__blog__img{
+    height: 90%;
+    width: 45%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.first{
+    background: url(../img/sinuha.jpeg) no-repeat center;
+    background-size: cover; 
+}
+.second{
+    background: url(../img/three_sisters.jpeg) no-repeat center;
+    background-size: cover; 
+    background-position: 0 -50;
+}
+.third{
+    background: url(../img/okzhetpes.jpeg) no-repeat center;
+    background-size: cover; 
+    background-position: 0 -50;
+}
+.forth{
+    background: url(../img/zhumbaktas.jpeg) no-repeat center;
+    background-size: cover; 
+    background-position: 0 -100;
+}
+.fifth{
+    background: url(../img/tufelka.jpeg) no-repeat center;
+    background-size: cover; 
+    background-position: 0 -100;
+}
+.sixth{
+    background: url(../img/bolektau.jpeg) no-repeat center;
+    background-size: cover; 
+}
+.seventh{
+    background: url(../img/zheke-batyr.jpeg) no-repeat center;
+    background-size: cover; 
+}
+.main__blog__img__info{
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    padding-top: 500px;
+    transition: ease-in-out .2s;
+}
+.main__blog__img:hover .main__blog__img__info{
+    padding-top: 0px;
+
+}
+.main__blog__img__info__text{
+    text-align: center;
+    line-height: 15;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+.main__text{
+    padding-top: 20px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+}
+.main__text{
+    padding: 40px;
+    font-size: 18px;
+    width: 45%;
+}
+.footer__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footer__right{
+    text-align: right;
+}
+.footer__creators--name{
+    padding-top: 10px;
+}
+.footer__project--creators{
+    width: 380px;
+}
