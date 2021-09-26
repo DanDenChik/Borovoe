@@ -52,8 +52,188 @@ a{
     font-weight: 700;
     font-size: 30px;
 }
+.slider{
+    position: relative;
+    min-width: 0;
+    padding: 0 60px;
+}
+.slider__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider__right{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.slider__left{
+    width: 30%;
+    height: 90%;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider__left img{
+    width: 100%;
+}
+.slider__title{
+    font-size: 24px;
+}
+.slider__info{
+    padding-top: 10;
+}
+/* Слайдер */
+.slick-slider{
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: center;
+}
+/* Слайд */
+.slick-slide{
+    background-color:lightgoldenrodyellow;
+    height: 300px;
+    padding: 0 30px;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{   
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 33px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    margin-top: -30px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: 0;
+    background: url(../img/slider__arrow__left.png) center no-repeat;
+    background-size: cover;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+    background: url(../img/slider__arrow__right.png) no-repeat;
+    background-size: cover;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    border: solid lightcoral 2px;
+}
+/* Элемент точки */
+.slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    border: solid lightskyblue 2px;
+}
+.slider__btn{
+    width: 200px;
+    height: 50px;
+    background: blue;
+    text-align: center;
+    transition: ease-in-out .2s;
+    line-height: 3;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.slider__btn:hover{
+    background-color: skyblue;
+}
+.slider__img{
+    width: 100%;
+    height: 100%;
+}
+.first__image{
+    background: url(../img/1.jpeg) center no-repeat;
+    background-size: cover;
+    background-position: 0 -100;
+}
+.second__image{
+    background: url(../img/2.jpeg) center no-repeat;
+    background-size: cover;
+    background-position: 0 -100;
+}
+.third__image{
+    background: url(../img/3.jpeg) center no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+.forth__image{
+    background: url(../img/4.jpeg) center no-repeat;
+    background-size: cover;
+    background-position: 0 -170;
+}
+.fifth__image{
+    background: url(../img/5.jpeg) center no-repeat;
+    background-size: cover;
+    background-position: 0 -    50;
+}
+.sixth__image{
+    background: url(../img/6.jpeg) center no-repeat;
+    background-size: cover;
+    background-position: 0 -150;
+}
+.seventh__image{
+    background: url(../img/7.jpeg) center no-repeat;
+    background-size: cover;
+    background-position: 0 -40;
+}
+.eighth__image{
+    background: url(../img/8.jpeg) center no-repeat;
+    background-size: cover;
+    background-position: 0 -160;
+}
+.footer{
+    height: 200px;
+}
 .footer__main{
     display: flex;
+    height: 200px;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
@@ -66,4 +246,103 @@ a{
 }
 .footer__project--creators{
     width: 380px;
+}
+.header{
+    height: 200px;
+}
+.logo img{
+    width: 250px;
+    height: 150px;
+}
+.footer__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    height: 200px;
+    width: 100%;
+}
+.footer__right{
+    text-align: right;
+    width: 60%;
+}
+.footer__left{
+    height: 100%;
+    width: 30%;
+}
+.footer__nis__logo{
+    width: 100%;
+    height: 100%;
+}
+.footer__creators--name{
+    padding-top: 10px;
+}
+.footer__creators--info:last-child{
+    padding-top: 40px;
+}
+.footer__creators--info{
+    width: 280px;
+}
+.footer__project--creators{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo img{
+    width: 250px;
+    height: 150px;
+}
+.footer__project__creators{
+    line-height: 1.5;
+}
+.intro{
+    width: 100%;
+    height: 1080px;
+    background: url(../img/flora_intro.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.intro__overflow{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.intro{
+    z-index: 1;
+}
+.intro__main{
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    width: 500px;
+    left: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+    color: rgb(156, 168, 173);
+}
+.intro__title{
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.tabcontent span{
+    cursor: pointer;
 }
