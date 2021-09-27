@@ -126,3 +126,11 @@ a{
     border: 1px solid #ccc;
     border-top: none;
 }
+#main__mountains img{
+    width: 1000px;
+    margin: 0 auto;
+}
+#zheke__batyr, #main__mountains{
+    align-items: center;
+    justify-content: center;
+}

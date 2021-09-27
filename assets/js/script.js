@@ -22,7 +22,7 @@ function openMountain(evt, cityName) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
   
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(cityName).style.display = "flex";
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
